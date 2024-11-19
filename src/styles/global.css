@@ -1,0 +1,18 @@
+nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 5px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  

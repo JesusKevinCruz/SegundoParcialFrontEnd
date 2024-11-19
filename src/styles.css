@@ -1,0 +1,352 @@
+body{
+     
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  
+  }
+
+*{ 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+header{
+    background-color: rgba(255,218,1,255);
+    width: 100%;
+    
+    overflow-x: hidden;
+    
+}
+header .examen1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+.examen1 p{
+  font-weight: 500;
+}
+.examen h1{
+  width: 15%;
+  font-size: 80px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.examen p{
+  width: 50%;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.boton{ text-align: center; text-decoration: none; padding: 15px 20px;
+  background-color: rgba(252,63,122,255); color: white; font-size: 15x; font-weight: bold;
+  border-radius: 100px; 
+}
+.margen{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.examen a{
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.redes{
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  
+}
+.redes img{
+  height: 40px;
+  width: 40px;
+}
+.navegador{
+  background-color: rgb(160, 159, 159);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 80%;
+  margin-top: 20px;
+}
+.nav_list{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.nav_list a{
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+}
+.cont1 img {
+  width: 100%;  
+  border-radius: 5px;
+  height: auto;  
+}
+.bloques{
+  display: flex;
+  padding: 20px;
+}
+.bloque1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: repeat(2, 1fr);     
+  gap: 20px;                             
+  width: 95%;                            
+  justify-items: center;                 
+  align-items: center;                    
+}
+.bloque1 img {
+  width: 100%;   
+  height: auto;  
+  object-fit: cover;  
+  border-radius: 5px;
+  margin-left: 50px;
+}
+.bloque2 {
+  width: 100%;  
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;  
+}
+.bloque2 p {
+  font-weight: 400;
+  font-size: 1.2rem;  
+  line-height: 1.5;
+}
+.cont1 h3{
+  border-radius: 2px;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+  width: 90%;
+  height: 40px;
+  margin-left: 50px;
+}
+.cont1 img{
+  width: 90%;
+}
+main{
+  background-color: rgb(231, 231, 231);
+}
+.bloque2 h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;  
+}
+.informacion img{
+  width: 50px;
+  border-radius: 50%;
+}
+.informacion {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px; 
+  margin-top: 40px;
+  text-align: center; 
+}
+
+footer{
+  background-color: rgb(255,218,1,255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 145px;
+  padding: 0 40px 0 40px;
+}
+.pc{
+  position: absolute;
+  top: 10%;
+  right: 50px;
+  height: 580px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.abrir,.cerrar{
+  display: none;
+}
+.pc1{
+  display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 384px){
+  body{
+    width: 384px;
+  }
+
+  .pc{
+    position: relative;
+    display: none;
+  }
+  .examen h1{
+    font-size: 30px;
+  }
+  .examen p{
+    text-align: center;
+  }
+  .bloques{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .bloque1{
+    display: block;
+  }
+  .redes a{
+    padding: 0;
+    margin: 0;
+  }
+  .bloque2{
+    width: 100%;
+  }
+  .navegador{
+    width: 100%;
+  }
+  .abrir {
+    display: block;
+    position: relative;
+    padding: 10px;
+    left: -150px;
+    content: "≡";
+    font-size: 40px;
+    display: inline-block;
+    background-color: rgba(255,218,1,255);
+    margin-top: 10px;
+    height: 60px;
+    border: 0;
+  }
+  .cerrar {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    top: -30px;
+    background-color: rgba(255,218,1,255);
+    margin-top: 5px;
+    left: -55px;
+    border: 0;
+  }
+  .navegador{
+    position: absolute;
+    width: 59%;
+    background-color: rgb(160, 159, 159);
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    align-items: start;
+    visibility: hidden;
+    padding: 5px;
+  }
+  .nav_list{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    top: -50px;
+    font-size: 30px;
+    
+  }
+  .navegador.visible{
+    opacity: 1;
+    visibility: visible;
+    top: 138.5%;
+    left: 60px;
+  }
+  
+  header .examen1{
+    padding-left: 0;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .examen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .examen h1{
+    padding: 0;
+    width: 50%;
+    font-size: 55px;
+    font-weight: 900;
+  }
+  .examen p{
+    padding: 0;
+    width: 55%;
+  }
+  .bloque1{
+    width: 100%;
+    
+  }
+  .bloque1 img{
+    margin-left: 0;
+  }
+  .bloque1 h3{
+    margin-left: 0;
+  }
+  .cont1 img{
+    width: 100%;
+  }
+  .cont1 h3{
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pc1{
+    display: block;
+    height: 450px;
+    border-radius: 10px;
+  }
+  
+  .bloque2 p{
+    font-weight: 400;
+    text-align: center;
+  }
+  .correo p{
+    font-weight: 400;
+  }
+  .numero p{
+    font-weight: 400;
+  }
+  .informacion{
+    justify-content: center;
+  }
+  .margen a{
+    margin: 0;
+  }
+  .mapa iframe {
+    height: 590px; 
+  }
+
+}
+  
